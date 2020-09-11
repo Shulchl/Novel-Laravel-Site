@@ -51,10 +51,10 @@ return [
 
         'mailgun' => [
             'transport' => 'mailgun',
-            'host' => ('MAILGUN_SMTP_SERVER'),
-            'port' => ('MAILGUN_SMTP_PORT'),
-            'username' => ('MAILGUN_SMTP_LOGIN'),
-            'password' => ('MAILGUN_SMTP_PASSWORD'),
+            'host' => env('MAILGUN_SMTP_SERVER'),
+            'port' => env('MAILGUN_SMTP_PORT'),
+            'username' => env('MAILGUN_SMTP_LOGIN'),
+            'password' => env('MAILGUN_SMTP_PASSWORD'),
             'timeout' => null,
             'auth_mode' => null,
         ],
