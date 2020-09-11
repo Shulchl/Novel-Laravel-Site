@@ -19,6 +19,11 @@ return [
         'secret' => env('MAILGUN_SECRET'),
         'endpoint' => env('MAILGUN_ENDPOINT', 'api.mailgun.net'),
     ],
+    'sendgrid' => [
+        'domain' => env('SENDGRID_DOMAIN'),
+        'secret' => env('SENDGRID_SECRET'),
+        'endpoint' => env('SENDGRID_ENDPOINT', 'api.sendgrid.net'),
+    ],
 
     'postmark' => [
         'token' => env('POSTMARK_TOKEN'),
