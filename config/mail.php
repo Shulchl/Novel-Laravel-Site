@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'mailgun'),
+    'default' => env('MAIL_MAILER', 'smtp'),
 
     /*
     |--------------------------------------------------------------------------
@@ -36,11 +36,11 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+            'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
             'port' => env('MAIL_PORT', 587),
             'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
+            'username' => env('SENDGRID_USERNAME'),
+            'password' => env('SENDGRID_PASSWORD'),
             'timeout' => null,
             'auth_mode' => null,
         ],
@@ -51,12 +51,6 @@ return [
 
         'mailgun' => [
             'transport' => 'mailgun',
-            'host' => env('MAILGUN_SMTP_SERVER'),
-            'port' => env('MAILGUN_SMTP_PORT'),
-            'username' => env('MAILGUN_SMTP_LOGIN'),
-            'password' => env('MAILGUN_SMTP_PASSWORD'),
-            'timeout' => null,
-            'auth_mode' => null,
         ],
 
         'postmark' => [
