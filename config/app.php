@@ -175,9 +175,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-        //SENGMAIL PROVIDER
-        Sichikawa\LaravelSendgridDriver\SendgridTransportServiceProvider::class
-
     ],
 
     /*
