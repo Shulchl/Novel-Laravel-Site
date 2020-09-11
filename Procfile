@@ -1,1 +1,1 @@
-php artisan serve
+worker: php artisan serve
